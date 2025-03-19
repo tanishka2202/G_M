@@ -1,0 +1,176 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f9f4;
+    color: #333;
+}
+
+.about-section {
+    margin-top: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.about-container {
+    background: #c1dcdc;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-container h2 {
+    color: #313030;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-intro {
+    font-size: 16px;
+    color: #313030;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h3 {
+    color: #313030;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 14px;
+    color: #313030;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.2);
+}
+
+/* Team Section */
+.team-heading {
+    margin-top: 30px;
+    color:#313030;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.1);
+    text-align: center;
+    width: 200px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.2);
+}
+
+.team-member h4 {
+    margin: 5px 0;
+    color: #313030;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #313030;
+}
+/* Core Values Section */
+.values-section {
+    background-color: #c1dcdc;
+    color: #313030;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.values-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.values {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.value-card {
+    background-color: #89adad;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+}
+
+.value-card img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.value-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #74a1a1;
+    padding: 20px 0;
+    text-align: center;
+    color: #313030;
+}
+
+footer .footer-content p {
+    font-size: 0.9rem;
+}

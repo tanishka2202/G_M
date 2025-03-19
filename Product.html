@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GREEN_MIND</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="products.css" />
+        
+    </head>
+        
+        <body>
+            <nav class="navbar">
+                <div class="container nav_container">
+                  <div class="nav_left">
+                   <a href="#" class="nav_logo">GREENMIND</a>
+                    <ul class="nav_list">
+                      <li class="nav_item"><a href="index.html" class="nav_link active">Home</a></li>
+                      <li class="nav_item"><a href="Product.html" class="nav_link">Products</a></li>
+                      <li class="nav_item"><a href="Plantare.html" class="nav_link">Plantcare</a></li>
+                      <li class="nav_item"> <a href="About.html" class="nav_link">About</a></li>
+                      <li class="nav_item"><a href="Blog.html" class="nav_link">Blog</a></li>
+                      <li class="nav_item"><a href="Contact.html" class="nav_link">Contact</a></li>   
+                        
+                      <input type="text" class="Search_L" placeholder="Search for products" />           
+                        </ul>
+                    </div>
+                    <div class="nav_right">
+                        <img src="images/cart.png" alt="" class="nav_icon" />
+                        <img src="images/user.png" alt="" class="nav_icon" />
+                      </div>
+                    </div>
+              </nav>
+
+    <!-- Hero Section -->
+    <header class="product-hero">
+      <h1>Explore Our Plant Collection</h1>
+      <p>Find the perfect plants to bring nature into your space.</p>
+  </header>
+
+  <!-- Categories Section -->
+  <section class="categories1">
+      <h2>Categories</h2>
+      <div class="category-list">
+          <button class="category-btn" onclick="filterProducts('all')">All</button>
+          <button class="category-btn" onclick="filterProducts('indoor')">Indoor Plants</button>
+          <button class="category-btn" onclick="filterProducts('outdoor')">Outdoor Plants</button>
+          <button class="category-btn" onclick="filterProducts('succulents')">Succulents</button>
+          <button class="category-btn" onclick="filterProducts('herbs')">Herbs</button>
+          <button class="category-btn" onclick="filterProducts('flowers')">Flowering Plants</button>
+      </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products-section">
+      <h2>Our Products</h2>
+      <div class="products-grid">
+
+          <!-- Indoor Plants -->
+          <div class="product-card indoor">
+              <img src="images/peace-lily.jpg" alt="Peace Lily">
+              <h3>Peace Lily</h3>
+              <p>A beautiful air-purifying indoor plant that thrives in low light.</p>
+              <p class="price">₹450</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card indoor">
+              <img src="images/snake-plant.jpg" alt="Snake Plant">
+              <h3>Snake Plant</h3>
+              <p>Low-maintenance, drought-resistant, and great for oxygen production.</p>
+              <p class="price">₹400</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <!-- Outdoor Plants -->
+          <div class="product-card outdoor">
+              <img src="images/ficus-tree.jpg" alt="Ficus Tree">
+              <h3>Ficus Tree</h3>
+              <p>Great for patios and gardens, the ficus tree is a hardy outdoor plant.</p>
+              <p class="price">₹550</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card outdoor">
+              <img src="images/areca-palm.jpg" alt="Areca Palm">
+              <h3>Areca Palm</h3>
+              <p>A popular tropical palm that adds a fresh look to any outdoor space.</p>
+              <p class="price">₹400</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <!-- Succulents -->
+          <div class="product-card succulents">
+              <img src="images/aloe-vera.jpg" alt="Aloe Vera">
+              <h3>Aloe Vera</h3>
+              <p>Known for its medicinal properties, Aloe Vera is an easy-care succulent.</p>
+              <p class="price">₹299</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card succulents">
+              <img src="images/cactus.jpg" alt="Cactus">
+              <h3>Cactus</h3>
+              <p>A hardy plant that requires minimal water and is perfect for decor.</p>
+              <p class="price">₹290</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <!-- Herbs -->
+          <div class="product-card herbs">
+              <img src="images/basil.jpg" alt="Basil">
+              <h3>Basil</h3>
+              <p>An aromatic herb used in cooking, great for indoor or outdoor gardening.</p>
+              <p class="price">₹350</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card herbs">
+              <img src="images/mint.jpg" alt="Mint">
+              <h3>Mint</h3>
+              <p>A refreshing herb that grows quickly and enhances many dishes.</p>
+              <p class="price">₹399</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <!-- Flowering Plants -->
+          <div class="product-card flowers">
+              <img src="images/rose-plant.jpg" alt="Rose Plant">
+              <h3>Rose Plant</h3>
+              <p>Beautiful and fragrant, perfect for home gardens and decorations.</p>
+              <p class="price">₹450</p>
+              <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card flowers">
+              <img src="images/jasmine.jpg" alt="Jasmine">
+              <h3>Jasmine</h3>
+              <p>Known for its sweet fragrance, jasmine is a delightful flowering plant.</p>
+              <p class="price">₹299</p>
+              <button>Add to Cart</button>
+          </div>
+
+      </div>
+  </section>
+
+  <script>
+      function filterProducts(category) {
+          let products = document.querySelectorAll('.product-card');
+          products.forEach(product => {
+              if (category === 'all' || product.classList.contains(category)) {
+                  product.style.display = "block";
+              } else {
+                  product.style.display = "none";
+              }
+          });
+      }
+  </script>
+
+            
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <h2>GREENMIND</h2>
+      <p>Eco-friendly solutions for a better tomorrow.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Product.html">Product</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: support@greenmind.com</p>
+      <p>Phone: +123 456 7890</p>
+      <p>Location: Pune, India</p>
+    </div>
+    <div class="footer-social">
+      <h3>Follow Us</h3>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+      <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/#"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GREENMIND. All rights reserved.</p>
+  </div>
+</footer>
+
+
+        </body>
+</html>

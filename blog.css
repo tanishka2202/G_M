@@ -1,0 +1,159 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #1e1e1e;
+}
+
+/* Hero Section */
+.blog-hero {
+    background: url('blog-banner.jpg') center/cover no-repeat;
+    text-align: center;
+    color: #3f3f3f;
+    padding: 60px 20px;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.blog-hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Blog Section */
+.blog-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    text-align: center;
+    color: #3f3f3f;
+}
+
+.blog-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c5d3f;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Blog Card */
+.blog-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.blog-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #1e1e1e;
+}
+
+.blog-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #668e8e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-card a:hover {
+    color: #9ac0c0;
+}
+
+/* Categories Section */
+.categories {
+    background: #e0f2f1;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category-list a {
+    background: #668e8e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.category-list a:hover {
+    background: #9ac0c0;
+}
+
+/* Newsletter */
+.newsletter {
+    color: #313030;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.newsletter form {
+    margin-top: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+}
+
+.newsletter button {
+    background:  #668e8e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter button:hover {
+    background: #9ac0c0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
